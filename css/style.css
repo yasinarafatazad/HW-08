@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    background: #bdbdbd;
+}
+.main{
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+    background: wheat;
+    position: relative;
+}
+.one{
+    height: 100px;
+    width: 100px;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.one::after{
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 100%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 300px;
+    background: #000;
+}
+.one::before{
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 100%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 300px;
+    background: #000;
+}
+.two{
+    height: 100px;
+    width: 100px;
+    background: greenyellow;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.two::after{
+    content: '';
+    position: absolute;
+    top: 100px;
+    left: 40%;
+    transform: translateX(-50%);
+    height: 300px;
+    width: 4px;
+    background: #000;
+}
+.two::before{
+    content: '';
+    position: absolute;
+    top: 100px;
+    left: 60%;
+    transform: translateX(-50%);
+    height: 300px;
+    width: 4px;
+    background: #000;
+}
+.three{
+    height: 100px;
+    width: 100px;
+    background: purple;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.three::after{
+    content: '';
+    position: absolute;
+    bottom: 100px;
+    left: 60%;
+    transform: translateX(-50%);
+    height: 300px;
+    width: 4px;
+    background: #000;
+}
+.three::before{
+    content: '';
+    position: absolute;
+    bottom: 100px;
+    left: 40%;
+    transform: translateX(-50%);
+    height: 300px;
+    width: 4px;
+    background: #000;
+}
+.four{
+    height: 100px;
+    width: 100px;
+    background: maroon;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.four::after{
+    content: '';
+    position: absolute;
+    top: 60%;
+    right: 100%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 300px;
+    background: #000;
+}
+.four::before{
+    content: '';
+    position: absolute;
+    top: 40%;
+    right: 100%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 300px;
+    background: #000;
+}
